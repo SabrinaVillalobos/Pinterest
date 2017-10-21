@@ -4,13 +4,25 @@ body {
 	padding:0;
 }
 
-.upperbar {
+div.upperbar {
 	width: 100%;
 	height: 65px;
 	/*background-color: red;*/
 	position: fixed;
 	outline: 1px solid #EFEFEF;
+	background-color: #FFF;
 
+}
+
+ul.u-menu {
+	position: relative;
+	width: 240px;
+	height: 45px;
+	left: 72%;
+	display: block;
+	top:11px;
+	margin:0;
+	padding: 0;
 }
 
 .pinico {
@@ -20,6 +32,7 @@ body {
 	font-size: 32px;
 	display:block;
 	padding-left: 23px;
+	top:15px;
 
 }
 
@@ -36,7 +49,6 @@ body {
 
 a.line {
 
-	width: 64%;
 	height: 39px;
 	position: fixed;
 	border-style: solid;
@@ -104,6 +116,7 @@ li.search {
 	left:125px;
 	font-weight: 600;
 	z-index: 1;
+	width: 50%;
 	font-family: "Helvetica Neue", HelveticaNeue, 
 	"TeX Gyre Heros", TeXGyreHeros, FreeSans, 
 	"Nimbus Sans L", "Liberation Sans", Arimo,
@@ -112,12 +125,15 @@ li.search {
 
 p {
 	position: relative;
-	left: 2%;
+	left: 10%;
 	top: 8px;
+	right: 20%;
 	overflow: hidden;
 	text-rendering: auto;
 	-webkit-font-smoothing: antialiased;
 	margin: 0;
+	display: inline-block;
+	font-size: 16px;
 }
 
 i.fa.fa-chevron-down {
@@ -125,4 +141,152 @@ i.fa.fa-chevron-down {
 	display: inline-block;
 	bottom: 1px;
 	font-size: 20px;
+	background-color: 
+}
+
+div.in{
+
+	position: absolute;
+	display: block;
+	z-index: 1;
+	font-size: 16px;
+	overflow: hidden;
+	height: 45px;
+	width: 80px;
+}
+
+div.in h5 {
+	position: inherit;
+	color: #B5B5B5;
+	z-index: 1;
+	left: 20%;
+	font-size: 16px;
+	padding: 0;
+	margin:0;
+	top:22px;
+
+
+
+
+}
+
+.saico a {
+	position: relative;
+	display: block;
+	z-index: 1;
+	left: 26%;
+	top:2px;
+	width: 45px;
+	height: 40px;
+	margin:0;
+	padding: 0;
+}
+
+.saico img {
+	position: fixed;
+	display: block;
+	z-index: 1;
+	left: 78%;
+	right: 3%;
+	height: 24px;
+	width: 24px;
+	margin:0;
+	padding:0;
+	top: 20px;
+	
+}
+
+.fondo {
+	position: absolute;
+	background-image: url(gatos.jpg);
+	width: 100%;
+	height: 200%;
+}
+
+.s h4 {
+	position: fixed;
+	font-size: 16px;
+	z-index: 1;
+	color:#B5B5B5;
+	right:15%;
+	padding: 5px;
+	top: 8px;
+}
+
+i.fa.fa-bars {
+	position: absolute;
+	z-index: 1;
+	display:inline-block;
+	left: 85%;
+	top:8px;
+	font-size: 28px;
+	color: #B5B5B5;
+	overflow: hidden;
+}
+
+i.fa.fa-commenting {
+	position: absolute;
+	z-index: 1;
+	display:inline-block;
+	left: 109%;
+	top:8px;
+	font-size: 28px;
+	color: #B5B5B5;
+	overflow: hidden;
+}
+
+i.fa.fa-ellipsis-h
+
+{
+	position: absolute;
+	z-index: 1;
+	display:inline-block;
+	left: 135%;
+	top:8px;
+	font-size: 28px;
+	color: #B5B5B5;
+	overflow: hidden;
+}
+
+.buttons-menu{
+	z-index: 1;
+	height: 85px;
+	width: 100%;
+	top: 66px;
+	position: fixed;
+	background-color: red;
+	font-family: "Helvetica Neue", HelveticaNeue, 
+	"TeX Gyre Heros", TeXGyreHeros, FreeSans, 
+	"Nimbus Sans L", "Liberation Sans", Arimo,
+	 Helvetica, Arial, sans-serif;
+}
+
+
+.buttons-menu ul {
+	position: fixed;
+	z-index: 1;
+	/*outline: 1px solid blue;*/
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	background-color: blue;
+	line-height: 50px;
+	overflow: auto;
+
+
+}
+
+li.des{
+	/*outline: 1px solid red;*/
+	width:100px;
+	/*display: inline-block;*/
+	text-align: center;
+	float:left;
+}
+
+ul.a {
+	/*outline: 1px solid green;*/
+	text-decoration: none;
+	color: #fff;
+	display: block;
 }

@@ -5,10 +5,13 @@ body {
 }
 
 div.upperbar {
+	z-index: 3;
+	bottom: 950px;
 	width: 100%;
 	height: 65px;
 	/*background-color: red;*/
 	position: fixed;
+	display: block;
 	outline: 1px solid #EFEFEF;
 	background-color: #FFF;
 
@@ -196,12 +199,6 @@ div.in h5 {
 	
 }
 
-.fondo {
-	position: absolute;
-	background-image: url(gatos.jpg);
-	width: 100%;
-	height: 200%;
-}
 
 .s h4 {
 	position: fixed;
@@ -248,35 +245,31 @@ i.fa.fa-ellipsis-h
 	overflow: hidden;
 }
 
-.buttons-menu{
+.buttons-menu {
 	z-index: 1;
-	height: 85px;
 	width: 100%;
-	top: 66px;
+	height: 84px;
+	top:66px;
 	position: fixed;
-	background-color: red;
-	font-family: "Helvetica Neue", HelveticaNeue, 
-	"TeX Gyre Heros", TeXGyreHeros, FreeSans, 
-	"Nimbus Sans L", "Liberation Sans", Arimo,
-	 Helvetica, Arial, sans-serif;
+	background-color: green;
 }
 
-
 .buttons-menu ul {
-	position: fixed;
-	z-index: 1;
-	/*outline: 1px solid blue;*/
+
+	width: 100%;
+	height: 84px;
+	outline: 1px solid blue;
 	list-style: none;
 	padding: 0;
 	margin: 0;
-	background-color: blue;
+	background: #2e2e2a;
 	line-height: 50px;
 	overflow: auto;
-
-
 }
 
-li.des{
+.buttons.menu li {
+
+	display:block;
 	/*outline: 1px solid red;*/
 	width:100px;
 	/*display: inline-block;*/
@@ -284,9 +277,51 @@ li.des{
 	float:left;
 }
 
-ul.a {
+.buttons-menu a {
 	/*outline: 1px solid green;*/
 	text-decoration: none;
 	color: #fff;
 	display: block;
+}
+
+#columns {
+
+	column-width: 245px;
+	max-width: 100%;
+	padding: 20px;
+	margin: 130px auto;
+
+
+}
+
+div#columns figure {
+	border: 2px solid #fcfcfc;
+	margin: 4px;
+	margin-top: 30px;
+	margin-bottom: 15px;
+	padding-bottom: 10px;
+    display: inline-block;
+
+}
+
+
+div#columns figure img {
+	width: 100%; height: auto;
+	padding-bottom: 5px;
+	margin-bottom: 5px;
+	border-radius: 10px;
+
+
+}
+div#columns figure img:hover {
+	
+	filter: opacity(85%) grayscale(30%);
+}
+
+div#columns figure figcaption {
+
+  font-size: 14px;
+  color: #444;
+  font-weight: 30px;
+
 }
